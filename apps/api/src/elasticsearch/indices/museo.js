@@ -293,15 +293,6 @@ module.exports = {
             }
           }
         },
-        DOMPAL: {
-          type: "text",
-          fields: {
-            keyword: {
-              type: "keyword",
-              ignore_above: 256
-            }
-          }
-        },
         "DPSC-D": {
           type: "text",
           fields: {
