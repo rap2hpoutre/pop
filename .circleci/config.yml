@@ -281,7 +281,7 @@ workflows:
             - test_diffusion
           filters:
             branches:
-              only: master
+              only: master_temp
       - build_production_staging:
           requires:
             - test_production
@@ -293,7 +293,7 @@ workflows:
             - test_production
           filters:
             branches:
-              only: master
+              only: master_temp
       - deploy_api_staging:
           requires:
             - test_api
@@ -319,16 +319,16 @@ workflows:
             - test_api
           filters:
             branches:
-              only: master
+              only: master_temp
       - deploy_production_prod:
           requires:
             - build_production_prod
           filters:
             branches:
-              only: master
+              only: master_temp
       - deploy_diffusion_prod:
           requires:
             - build_diffusion_prod
           filters:
             branches:
-              only: master
+              only: master_temp
